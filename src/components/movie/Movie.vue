@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     toDetail(id) {
-      this.$router.push('/Detail/' + id)
+      this.$router.push('/mdetail/' + id)
     }
   }
 }
