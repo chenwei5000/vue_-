@@ -15,3 +15,15 @@ body {
 ul {
   list-style: none;
 }
+
+.el-form-item__content {
+  float: left;
+  width: 500px;
+  margin: 0 !important;
+}
+
+.el-textarea__inner {
+  resize: none;
+  width: 500px;
+  height: 150px;
+}

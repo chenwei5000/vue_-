@@ -12,7 +12,10 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Card,
-  Image
+  Image,
+  Input,
+  Form,
+  FormItem
 } from 'element-ui'
 
 Vue.use(Button)
@@ -28,3 +31,6 @@ Vue.use(Button)
   .use(BreadcrumbItem)
   .use(Card)
   .use(Image)
+  .use(Input)
+  .use(Form)
+  .use(FormItem)

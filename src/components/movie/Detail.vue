@@ -38,6 +38,9 @@
           </p>
         </div>
       </div>
+
+      <!-- 先把评论组件的内容写出来 -->
+      <my-com :msg="dataInfo.commons" @addData="addCommont"></my-com>
     </el-card>
   </div>
 </template>
@@ -59,7 +62,22 @@ export default {
         const info = res.filter(item => item.id === id)
         this.dataInfo = info[0]
       })
+  },
+  methods: {
+    addCommont(o) {
+      // 正常来讲，这里只需要发送一个post请求到后端即可
+      console.log(o)
+      this.dataInfo.commons.unshift({
+        id: this.dataInfo.commons.length + 1,
+        name: o.userName,
+        text: o.content,
+        time: '2020-04-23'
+      })
+    }
   }
+  // components: {
+  //   'my-com': Commons
+  // }
 }
 </script>
 

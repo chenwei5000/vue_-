@@ -11,7 +11,7 @@
           <el-image :src="item.src"></el-image>
           <div>
             <h3 class="demonstration">{{ item.title }}</h3>
-            <p>{{ item.content.split(0, 100) }}...</p>
+            <p>{{ item.content.slice(0, 110) }}...</p>
           </div>
         </li>
       </ul>
